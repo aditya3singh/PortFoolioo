@@ -45,10 +45,10 @@ const Resume = () => {
     }
   };
 
-  const handleDownload = (resume) => {
-    window.open(`http://localhost:5000/${resume.path}`, '_blank');
+   const handleDownload = (resume) => {
+    window.open(`${API_BASE_URL}/${resume.path}`, '_blank');
   };
-
+  
   const filteredResumes = filterCategory === 'All' 
     ? resumes 
     : resumes.filter(resume => resume.category === filterCategory);

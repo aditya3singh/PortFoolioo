@@ -70,7 +70,7 @@ const ResumeCard = ({ resume, onToggleStatus, onDelete, onDownload }) => {
           </button>
           
           <button
-            onClick={() => window.open(`http://localhost:5000/${resume.path}`, '_blank')}
+            onClick={() => window.open(`${API_BASE_URL}/${resume.path}`, '_blank')}
             className="inline-flex items-center space-x-1 text-green-600 hover:text-green-800 text-sm"
           >
             <FaEye size={14} />

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://portfoolioo-tree-main-backend.onrender.com/api';
+
 
 export const uploadResume = async (file, displayName, description, category) => {
   const formData = new FormData();

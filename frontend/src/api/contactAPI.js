@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'https://portfoolioo-tree-main-backend.onrender.com/api';
+const API_BASE = '/api';
 
 
 export const sendContactMessage = async (messageData) => {
